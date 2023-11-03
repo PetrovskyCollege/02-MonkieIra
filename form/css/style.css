@@ -56,6 +56,9 @@ h1{
     border: 1px solid #000;
     background: #FBF5F5;
     margin-right: 35px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Cormorant', serif;
 }
 form input{
     height: 40px;
