@@ -29,7 +29,7 @@
     
         <div class="forms">
         <!-- <label for="color">Любимый цвет*</label> -->
-        <input type="text" name="color" id="color" placeholder="любимый цвет">
+        <input type="text" name="color" id="color" placeholder="Любимый цвет">
         </div>
     
         <div class="forms">
@@ -42,7 +42,7 @@
         <input type="password" name="pass" id="pass" placeholder="Пароль">
         </div>
     
-        <button type="submit">Создать дневник</button>
+        <button type="submit" class="btn">Создать дневник</button>
         </div>
 </form>
 </body>
