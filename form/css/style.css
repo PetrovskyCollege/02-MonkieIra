@@ -20,8 +20,21 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+.forma{
+    margin-top: 114px;
+    max-width: 490px;
+    height: 359px;
+    background-color: white;
+    text-align: center;
+    padding-top: 70px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+.forms{
+    padding-bottom: 10px;
+}
 button{
-    margin-top: 35px;
     width: 344px;
     height: 69px;
     border: 0;
@@ -29,4 +42,14 @@ button{
     border-radius: 30px;
     font-size: 18px;
     font-weight: 500;
+    font-family: 'Cormorant', serif;
+    margin-top: 35px;
+}
+form input{
+    height: 40px;
+    width: 350px;
+    border: none;
+    border-bottom: 1px solid black;
+    font-family: 'Cormorant', serif;
+    font-size: 17px;
 }

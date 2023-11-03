@@ -7,45 +7,53 @@
 </head>
 
 <body>
-    <div class="form">
-    <h2>Расскажите о себе</h2>
-    <form action="reg.php" method="POST">
+<div class="form">
+        
+        <h2>Новый дневник</h2>
+        <form action="reg.php" method="POST">
     
-    <label for="name">Имя</label>
-    <input type="text" name="name" id="name">
-    <br>
-
-    <label for="email">E-mail</label>
-    <input type="email" name="e-mail" id="email">
-    <br>
-
-    <label for="hobbies">Увлечения*</label>
-    <input type="text" name="hobbies" id="hobbies">
-    <br>
-
-    <label for="color">Любимый цвет*</label>
-    <input type="color" name="color" id="color">
-    <br>
-
-    <label for="food">Любимая еда*</label>
-    <input type="text" name="food" id="food">
-    <br>
-
-    <label for="pass">Пароль </label>
-    <input type="password" name="pass" id="pass">
-
-    <button type="submit">Отправить</button>
-    </div>
+        <div class="forms">
+        <!-- <label for="name">Имя</label> -->
+        <input type="text" name="name" id="name" placeholder="Имя">
+        </div>
+    
+        <div class="forms">
+        <!-- <label for="email">E-mail</label> -->
+        <input type="email" name="e-mail" id="email" placeholder="E-mail">
+        </div>
+    
+        <div class="forms">
+        <!-- <label for="hobbies">Увлечения*</label> -->
+        <input type="text" name="hobbies" id="hobbies" placeholder="Увлечения">
+        </div>
+    
+        <div class="forms">
+        <!-- <label for="color">Любимый цвет*</label> -->
+        <input type="text" name="color" id="color" placeholder="любимый цвет">
+        </div>
+    
+        <div class="forms">
+        <!-- <label for="food">Любимая еда*</label> -->
+        <input type="text" name="food" id="food" placeholder="Любимая еда">
+        </div>
+    
+        <div class="forms">
+        <!-- <label for="pass">Пароль </label> -->
+        <input type="password" name="pass" id="pass" placeholder="Пароль">
+        </div>
+    
+        <button type="submit">Создать дневник</button>
+        </div>
 </form>
 </body>
 </html>
 
 <?php
 if (isset($_GET["name"])) {
-    echo "<h2>Привет, GET " . $_GET["name"] . "! </h2>";
+    echo "<h2>Привет, " . $_GET["name"] . "! </h2>";
 }
 
 if (isset($_POST["name"])) {
-    echo "<h2>Привет POST, " . $_POST["name"] . "! </h2>";
+    echo "<h2>Привет, " . $_POST["name"] . "! </h2>";
 }
 

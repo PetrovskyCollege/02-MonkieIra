@@ -3,25 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<form action="auto.php" method="POST">
-    <label for="email">E-mail</label>
-    <input type="email" name="e-mail" id="email">
-    <br>
-    <label for="pass">Пароль </label>
-    <input type="password" name="pass" id="pass">
+<div class="forma">
+<form action="auto.php">
 
-    <button type="submit">Отпрвить</button>
+    <!-- <label for="email">E-mail</label> -->
+    <div class="forms">
+    <input type="email" name="e-mail" id="email" placeholder="E-mail">
+    </div>
+    <!-- <label for="pass">Пароль </label> -->
+    <div class="forms">
+    <input type="password" name="pass" id="pass" placeholder="Пароль">
+    </div>
+
+    <button type="submit">Отправить</button>
 </form>
 </body>
 </html>
 
 <?php
 if (isset($_GET["name"])) {
-    echo "<h2>Привет, GET " . $_GET["name"] . "! </h2>";
+    echo "<h2>Привет, " . $_GET["name"] . "! </h2>";
 }
 
 if (isset($_POST["name"])) {
-    echo "<h2>Привет POST, " . $_POST["name"] . "! </h2>";
+    echo "<h2>Привет, " . $_POST["name"] . "! </h2>";
 }
